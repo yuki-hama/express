@@ -6,7 +6,7 @@ require('dotenv').config();
 // 接続情報を設定
 const { MongoClient } = require("mongodb");
 const uri = process.env.MONGODB_URI;
-const client = new MongoClient(uri);
+const client = new MongoClient('http://localhost:30009/notes_from_b');
 
 // corsミドルウェアを使用
 router.use(cors());
